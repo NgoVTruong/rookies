@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Truong\\_DEV\\rookies\\csharp dundamental day3\\csharp dundamental day3.csproj",
-      "projectName": "csharp dundamental day3",
-      "projectPath": "D:\\Truong\\_DEV\\rookies\\csharp dundamental day3\\csharp dundamental day3.csproj",
+      "projectUniqueName": "d:\\Truong\\_DEV\\rookies\\csharp fundamental day3\\csharp fundamental day3.csproj",
+      "projectName": "csharp fundamental day3",
+      "projectPath": "d:\\Truong\\_DEV\\rookies\\csharp fundamental day3\\csharp fundamental day3.csproj",
       "packagesPath": "C:\\Users\\saonm\\.nuget\\packages\\",
-      "outputPath": "D:\\Truong\\_DEV\\rookies\\csharp dundamental day3\\obj\\",
+      "outputPath": "d:\\Truong\\_DEV\\rookies\\csharp fundamental day3\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

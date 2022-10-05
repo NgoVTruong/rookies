@@ -1,0 +1,15 @@
+d:\Truong\_DEV\rookies\csharp fundamental day3\obj\Debug\net6.0\csharp fundamental day3.csproj.AssemblyReference.cache
+d:\Truong\_DEV\rookies\csharp fundamental day3\obj\Debug\net6.0\csharp fundamental day3.GeneratedMSBuildEditorConfig.editorconfig
+d:\Truong\_DEV\rookies\csharp fundamental day3\obj\Debug\net6.0\csharp fundamental day3.AssemblyInfoInputs.cache
+d:\Truong\_DEV\rookies\csharp fundamental day3\obj\Debug\net6.0\csharp fundamental day3.AssemblyInfo.cs
+d:\Truong\_DEV\rookies\csharp fundamental day3\obj\Debug\net6.0\csharp fundamental day3.csproj.CoreCompileInputs.cache
+d:\Truong\_DEV\rookies\csharp fundamental day3\bin\Debug\net6.0\csharp fundamental day3.exe
+d:\Truong\_DEV\rookies\csharp fundamental day3\bin\Debug\net6.0\csharp fundamental day3.deps.json
+d:\Truong\_DEV\rookies\csharp fundamental day3\bin\Debug\net6.0\csharp fundamental day3.runtimeconfig.json
+d:\Truong\_DEV\rookies\csharp fundamental day3\bin\Debug\net6.0\csharp fundamental day3.dll
+d:\Truong\_DEV\rookies\csharp fundamental day3\bin\Debug\net6.0\csharp fundamental day3.pdb
+d:\Truong\_DEV\rookies\csharp fundamental day3\obj\Debug\net6.0\csharp fundamental day3.dll
+d:\Truong\_DEV\rookies\csharp fundamental day3\obj\Debug\net6.0\refint\csharp fundamental day3.dll
+d:\Truong\_DEV\rookies\csharp fundamental day3\obj\Debug\net6.0\csharp fundamental day3.pdb
+d:\Truong\_DEV\rookies\csharp fundamental day3\obj\Debug\net6.0\csharp fundamental day3.genruntimeconfig.cache
+d:\Truong\_DEV\rookies\csharp fundamental day3\obj\Debug\net6.0\ref\csharp fundamental day3.dll

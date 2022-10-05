@@ -1,0 +1,26 @@
+D:\Truong\_DEV\Rookies\VS code\bin\Debug\net6.0\appsettings.Development.json
+D:\Truong\_DEV\Rookies\VS code\bin\Debug\net6.0\appsettings.json
+D:\Truong\_DEV\Rookies\VS code\bin\Debug\net6.0\VS code.staticwebassets.runtime.json
+D:\Truong\_DEV\Rookies\VS code\bin\Debug\net6.0\VS code.exe
+D:\Truong\_DEV\Rookies\VS code\bin\Debug\net6.0\VS code.deps.json
+D:\Truong\_DEV\Rookies\VS code\bin\Debug\net6.0\VS code.runtimeconfig.json
+D:\Truong\_DEV\Rookies\VS code\bin\Debug\net6.0\VS code.dll
+D:\Truong\_DEV\Rookies\VS code\bin\Debug\net6.0\VS code.pdb
+D:\Truong\_DEV\Rookies\VS code\obj\Debug\net6.0\VS code.csproj.AssemblyReference.cache
+D:\Truong\_DEV\Rookies\VS code\obj\Debug\net6.0\VS code.GeneratedMSBuildEditorConfig.editorconfig
+D:\Truong\_DEV\Rookies\VS code\obj\Debug\net6.0\VS code.AssemblyInfoInputs.cache
+D:\Truong\_DEV\Rookies\VS code\obj\Debug\net6.0\VS code.AssemblyInfo.cs
+D:\Truong\_DEV\Rookies\VS code\obj\Debug\net6.0\VS code.csproj.CoreCompileInputs.cache
+D:\Truong\_DEV\Rookies\VS code\obj\Debug\net6.0\VS code.MvcApplicationPartsAssemblyInfo.cache
+D:\Truong\_DEV\Rookies\VS code\obj\Debug\net6.0\VS code.RazorAssemblyInfo.cache
+D:\Truong\_DEV\Rookies\VS code\obj\Debug\net6.0\VS code.RazorAssemblyInfo.cs
+D:\Truong\_DEV\Rookies\VS code\obj\Debug\net6.0\staticwebassets.build.json
+D:\Truong\_DEV\Rookies\VS code\obj\Debug\net6.0\staticwebassets.development.json
+D:\Truong\_DEV\Rookies\VS code\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+D:\Truong\_DEV\Rookies\VS code\obj\Debug\net6.0\scopedcss\bundle\VS code.styles.css
+D:\Truong\_DEV\Rookies\VS code\obj\Debug\net6.0\scopedcss\projectbundle\VS code.bundle.scp.css
+D:\Truong\_DEV\Rookies\VS code\obj\Debug\net6.0\VS code.dll
+D:\Truong\_DEV\Rookies\VS code\obj\Debug\net6.0\refint\VS code.dll
+D:\Truong\_DEV\Rookies\VS code\obj\Debug\net6.0\VS code.pdb
+D:\Truong\_DEV\Rookies\VS code\obj\Debug\net6.0\VS code.genruntimeconfig.cache
+D:\Truong\_DEV\Rookies\VS code\obj\Debug\net6.0\ref\VS code.dll

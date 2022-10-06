@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "d:\\Truong\\_DEV\\rookies\\csharp fundamental day3\\csharp fundamental day3.csproj": {}
+    "D:\\Truong\\_DEV\\rookies\\csharp fundamental day3\\csharp fundamental day3.csproj": {}
   },
   "projects": {
-    "d:\\Truong\\_DEV\\rookies\\csharp fundamental day3\\csharp fundamental day3.csproj": {
+    "D:\\Truong\\_DEV\\rookies\\csharp fundamental day3\\csharp fundamental day3.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\Truong\\_DEV\\rookies\\csharp fundamental day3\\csharp fundamental day3.csproj",
+        "projectUniqueName": "D:\\Truong\\_DEV\\rookies\\csharp fundamental day3\\csharp fundamental day3.csproj",
         "projectName": "csharp fundamental day3",
-        "projectPath": "d:\\Truong\\_DEV\\rookies\\csharp fundamental day3\\csharp fundamental day3.csproj",
+        "projectPath": "D:\\Truong\\_DEV\\rookies\\csharp fundamental day3\\csharp fundamental day3.csproj",
         "packagesPath": "C:\\Users\\saonm\\.nuget\\packages\\",
-        "outputPath": "d:\\Truong\\_DEV\\rookies\\csharp fundamental day3\\obj\\",
+        "outputPath": "D:\\Truong\\_DEV\\rookies\\csharp fundamental day3\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

@@ -28,3 +28,18 @@ d:\Truong\_DEV\New folder\csharp fundamental day2\obj\Debug\net6.0\refint\C# fun
 d:\Truong\_DEV\New folder\csharp fundamental day2\obj\Debug\net6.0\C# fundamental #2.pdb
 d:\Truong\_DEV\New folder\csharp fundamental day2\obj\Debug\net6.0\C# fundamental #2.genruntimeconfig.cache
 d:\Truong\_DEV\New folder\csharp fundamental day2\obj\Debug\net6.0\ref\C# fundamental #2.dll
+d:\Truong\_DEV\rookies\csharp fundamental day2\bin\Debug\net6.0\C# fundamental #2.exe
+d:\Truong\_DEV\rookies\csharp fundamental day2\bin\Debug\net6.0\C# fundamental #2.deps.json
+d:\Truong\_DEV\rookies\csharp fundamental day2\bin\Debug\net6.0\C# fundamental #2.runtimeconfig.json
+d:\Truong\_DEV\rookies\csharp fundamental day2\bin\Debug\net6.0\C# fundamental #2.dll
+d:\Truong\_DEV\rookies\csharp fundamental day2\bin\Debug\net6.0\C# fundamental #2.pdb
+d:\Truong\_DEV\rookies\csharp fundamental day2\obj\Debug\net6.0\C# fundamental #2.csproj.AssemblyReference.cache
+d:\Truong\_DEV\rookies\csharp fundamental day2\obj\Debug\net6.0\C# fundamental #2.GeneratedMSBuildEditorConfig.editorconfig
+d:\Truong\_DEV\rookies\csharp fundamental day2\obj\Debug\net6.0\C# fundamental #2.AssemblyInfoInputs.cache
+d:\Truong\_DEV\rookies\csharp fundamental day2\obj\Debug\net6.0\C# fundamental #2.AssemblyInfo.cs
+d:\Truong\_DEV\rookies\csharp fundamental day2\obj\Debug\net6.0\C# fundamental #2.csproj.CoreCompileInputs.cache
+d:\Truong\_DEV\rookies\csharp fundamental day2\obj\Debug\net6.0\C# fundamental #2.dll
+d:\Truong\_DEV\rookies\csharp fundamental day2\obj\Debug\net6.0\refint\C# fundamental #2.dll
+d:\Truong\_DEV\rookies\csharp fundamental day2\obj\Debug\net6.0\C# fundamental #2.pdb
+d:\Truong\_DEV\rookies\csharp fundamental day2\obj\Debug\net6.0\C# fundamental #2.genruntimeconfig.cache
+d:\Truong\_DEV\rookies\csharp fundamental day2\obj\Debug\net6.0\ref\C# fundamental #2.dll

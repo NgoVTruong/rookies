@@ -46,72 +46,32 @@
 
         private static List<Member> WhoIsMale(List<Member> members)
         {
-            List<Member> males = new List<Member>();
-            var query = from m in members where m.Gender.ToLower() == "male" select m;
+            var query = (from m in members where m.Gender.ToLower() == "male" select m).ToList();
 
-            foreach (var member in query)
-            {
-                males.Add(member);
-            }
-
-            return males;
+            return query;
         }
 
         private static List<string> GetFullNames(List<Member> members)
         {
-            List<string> fullnames = new List<string>();
-            var query = members.Select((p) => { return p.FullName; });
+            var query = (members.Select((p) => { return p.FullName; })).ToList();
 
-            foreach (var member in query)
-            {
-                fullnames.Add(member);
-            }
-
-            return fullnames;
+            return query;
         }
 
         private static List<List<Member>> GetThreeLists(List<Member> members)
         {
             List<List<Member>> threeLists = new List<List<Member>>();
-            List<Member> equal2000 = new List<Member>();
-            List<Member> greaterThan2000 = new List<Member>();
-            List<Member> lessThan2000 = new List<Member>();
 
-            var queryEqual = from m in members where m.DateOfBirth.Year == 2000 select m;
-            var queryGreatedThan = from m in members where m.DateOfBirth.Year < 2000 select m;
-            var queryLessThan = from m in members where m.DateOfBirth.Year > 2000 select m;
-
-            foreach (var member in queryEqual)
-            {
-                equal2000.Add(member);
-            }
-            foreach (var member in queryGreatedThan)
-            {
-                greaterThan2000.Add(member);
-            }
-            foreach (var member in queryLessThan)
-            {
-                lessThan2000.Add(member);
-            }
-
-            threeLists.Add(equal2000);
-            threeLists.Add(greaterThan2000);
-            threeLists.Add(lessThan2000);
+            threeLists.Add((from m in members where m.DateOfBirth.Year == 2000 select m).ToList());
+            threeLists.Add((from m in members where m.DateOfBirth.Year < 2000 select m).ToList());
+            threeLists.Add((from m in members where m.DateOfBirth.Year > 2000 select m).ToList());
 
             return threeLists;
         }
 
         private static Member GetFirstMemberBornIn(List<Member> members, string place = "Ha Noi")
         {
-            Member FirstMemberInPlace = new Member();
-            var queryPlace = from m in members where m.BirthPlace.ToLower().Trim() == place.ToLower().Trim() select m;
-
-            foreach (var member in queryPlace)
-            {
-                return member;
-            }
-
-            return FirstMemberInPlace;
+            return (from m in members where m.BirthPlace.ToLower().Trim() == place.ToLower().Trim() select m).FirstOrDefault();
         }
 
         private static Member GetOldestMember(List<Member> members)

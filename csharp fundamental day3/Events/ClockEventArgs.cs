@@ -1,5 +1,3 @@
-using System;
-
 namespace csharp_fundamental_day3
 {
     public class ClockEventArgs : EventArgs

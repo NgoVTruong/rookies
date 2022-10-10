@@ -1,4 +1,3 @@
-using System;
 namespace csharp_fundamental_day3
 {
     public class Program
@@ -6,8 +5,8 @@ namespace csharp_fundamental_day3
         static void Main(string[] args)
         {
             Clock clock = new Clock();
-            DisplayClock displayClock = new DisplayClock();
-            displayClock.Subscribe(clock);
+            ViewClock viewClock = new ViewClock();
+            viewClock.Subscribe(clock);
             clock.Run();
         }
     }

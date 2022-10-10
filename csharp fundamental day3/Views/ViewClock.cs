@@ -1,8 +1,6 @@
-using System;
-
 namespace csharp_fundamental_day3
 {
-    public class DisplayClock
+    public class ViewClock
     {
         public void Subscribe(Clock clock)
         {

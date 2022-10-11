@@ -2,10 +2,6 @@ D:\Truong\_DEV\rookies\dotnet core assignment day1\bin\Debug\net6.0\appsettings.
 D:\Truong\_DEV\rookies\dotnet core assignment day1\bin\Debug\net6.0\appsettings.json
 D:\Truong\_DEV\rookies\dotnet core assignment day1\bin\Debug\net6.0\dotnet core assignment day1.staticwebassets.runtime.json
 D:\Truong\_DEV\rookies\dotnet core assignment day1\bin\Debug\net6.0\dotnet core assignment day1.exe
-D:\Truong\_DEV\rookies\dotnet core assignment day1\bin\Debug\net6.0\dotnet core assignment day1.deps.json
-D:\Truong\_DEV\rookies\dotnet core assignment day1\bin\Debug\net6.0\dotnet core assignment day1.runtimeconfig.json
-D:\Truong\_DEV\rookies\dotnet core assignment day1\bin\Debug\net6.0\dotnet core assignment day1.dll
-D:\Truong\_DEV\rookies\dotnet core assignment day1\bin\Debug\net6.0\dotnet core assignment day1.pdb
 D:\Truong\_DEV\rookies\dotnet core assignment day1\obj\Debug\net6.0\dotnet core assignment day1.csproj.AssemblyReference.cache
 D:\Truong\_DEV\rookies\dotnet core assignment day1\obj\Debug\net6.0\dotnet core assignment day1.GeneratedMSBuildEditorConfig.editorconfig
 D:\Truong\_DEV\rookies\dotnet core assignment day1\obj\Debug\net6.0\dotnet core assignment day1.AssemblyInfoInputs.cache
@@ -22,5 +18,9 @@ D:\Truong\_DEV\rookies\dotnet core assignment day1\obj\Debug\net6.0\scopedcss\pr
 D:\Truong\_DEV\rookies\dotnet core assignment day1\obj\Debug\net6.0\dotnet core assignment day1.dll
 D:\Truong\_DEV\rookies\dotnet core assignment day1\obj\Debug\net6.0\refint\dotnet core assignment day1.dll
 D:\Truong\_DEV\rookies\dotnet core assignment day1\obj\Debug\net6.0\dotnet core assignment day1.pdb
+D:\Truong\_DEV\rookies\dotnet core assignment day1\bin\Debug\net6.0\dotnet core assignment day1.deps.json
+D:\Truong\_DEV\rookies\dotnet core assignment day1\bin\Debug\net6.0\dotnet core assignment day1.runtimeconfig.json
+D:\Truong\_DEV\rookies\dotnet core assignment day1\bin\Debug\net6.0\dotnet core assignment day1.dll
+D:\Truong\_DEV\rookies\dotnet core assignment day1\bin\Debug\net6.0\dotnet core assignment day1.pdb
 D:\Truong\_DEV\rookies\dotnet core assignment day1\obj\Debug\net6.0\dotnet core assignment day1.genruntimeconfig.cache
 D:\Truong\_DEV\rookies\dotnet core assignment day1\obj\Debug\net6.0\ref\dotnet core assignment day1.dll

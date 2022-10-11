@@ -19,7 +19,7 @@ public class PersonModel
     {
         get
         {
-            return LastName + FirstName;
+            return LastName + " " + FirstName;
         }
     }
 

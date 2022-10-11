@@ -1,11 +1,10 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using dotnet_core_assignment_day1.Models;
 
-namespace dotnet_core_assignment_day1.Controllers
+namespace dotnet_core_assignment_day1.Controllers;
+public class RookiesController : Controller
 {
-    public class RookiesController : Controller
-    {
-        private static List<PersonModel> _people = new List<PersonModel>
+    private List<PersonModel> _people = new List<PersonModel>
     {
         new PersonModel {
             FirstName = "Truong",
@@ -16,53 +15,97 @@ namespace dotnet_core_assignment_day1.Controllers
             BirthPlace = "Nam Dinh",
             IsGraduated = "false",
         },
+        new PersonModel {
+            FirstName = "Doan",
+            LastName = "Mai",
+            Gender = "Male",
+            DateOfBirth = new DateTime(1999, 3, 8),
+            PhoneNumber = "0943764955",
+            BirthPlace = "Nam Dinh",
+            IsGraduated = "false",
+        },
+        new PersonModel {
+            FirstName = "Vi",
+            LastName = "Trinh",
+            Gender = "Female",
+            DateOfBirth = new DateTime(2001, 11, 2),
+            PhoneNumber = "0943764955",
+            BirthPlace = "Nam Dinh",
+            IsGraduated = "false",
+        },
+        new PersonModel {
+            FirstName = "Tin",
+            LastName = "Dinh",
+            Gender = "Male",
+            DateOfBirth = new DateTime(200, 6, 2),
+            PhoneNumber = "0943764955",
+            BirthPlace = "Thai Binh",
+            IsGraduated = "false",
+        },
     };
-        private readonly ILogger<RookiesController> _logger;
+    private readonly ILogger<RookiesController> _logger;
 
-        public RookiesController(ILogger<RookiesController> logger)
+    public RookiesController(ILogger<RookiesController> logger)
+    {
+        _logger = logger;
+    }
+
+    [Route("NashTech/Rookies/Index")]
+    public IActionResult Index()
+    {
+        return View(_people);
+    }
+
+    [Route("NashTech/Rookies/GetMaleMembers")]
+    public IActionResult GetMaleMembers()
+    {
+        var data = _people.Where(x => x.Gender == "Male").ToList();
+        return View(data);
+    }
+
+    [Route("NashTech/Rookies/GetOldestMembers")]
+    public IActionResult GetOldestMembers()
+    {
+        var maxAge = _people.Max(x => x.Age);
+        var oldestMember = _people.Where(x => x.Age == maxAge).FirstOrDefault(x => x.Age == maxAge);
+        return View(oldestMember);
+    }
+
+    [Route("NashTech/Rookies/GetFullNames")]
+    public IActionResult GetFullNames()
+    {
+        var query = _people.Select(x => x).ToList();
+        return View(query);
+    }
+    public IActionResult GetMemberByBirthYear(int year, string compareType)
+    {
+        switch (compareType)
         {
-            _logger = logger;
+            case "equal":
+                return View(_people.Where(x => x.DateOfBirth?.Year == year));
+            case "greaterThan":
+                return View(_people.Where(x => x.DateOfBirth?.Year < year));
+            case "lessThan":
+                return View(_people.Where(x => x.DateOfBirth?.Year > year));
+            default: return Json(null);
         }
-        public IActionResult GetMaleMembers()
-        {
-            var data = _people.Where(x => x.Gender == "Male").ToList();
-            return Json(data);
-        }
-        public IActionResult GetOldestMembers()
-        {
-            var maxAge = _people.Max(x => x.Age);
-            var oldestMember = _people.Where(x => x.Age == maxAge).FirstOrDefault(x => x.Age == maxAge);
-            return Json(oldestMember);
-        }
-        public IActionResult GetFullNames()
-        {
-            var members = _people.Select(x => x.FullName);
-            return Json(members);
-        }
-        public IActionResult GetMemberByBirthYear(int year, string compareType)
-        {
-            switch (compareType)
-            {
-                case "equal":
-                    return Json(_people.Where(x => x.DateOfBirth?.Year == year));
-                case "greaterThan":
-                    return Json(_people.Where(x => x.DateOfBirth?.Year == year));
-                case "lessThan":
-                    return Json(_people.Where(x => x.DateOfBirth?.Year == year));
-                default: return Json(null);
-            }
-        }
-        public IActionResult GetMembersWhoBornIn2000()
-        {
-            return RedirectToAction("MembersWhoBornIn2000", new { year = 2000, compareType = "equal" });
-        }
-        public IActionResult GetMembersWhoBornAfter2000()
-        {
-            return RedirectToAction("MembersWhoBornAfter2000", new { year = 2000, compareType = "greaterThan" });
-        }
-        public IActionResult GetMembersWhoBornBefore2000()
-        {
-            return RedirectToAction("MembersWhoBornBefore2000", new { year = 2000, compareType = "lessThan" });
-        }
+    }
+
+    [Route("NashTech/Rookies/GetMembersWhoBornIn2000")]
+    public IActionResult GetMembersWhoBornIn2000()
+    {
+        return RedirectToAction("GetMemberByBirthYear", new { year = 2000, compareType = "equal" });
+    }
+
+    [Route("NashTech/Rookies/GetMembersWhoBornAfter2000")]
+    public IActionResult GetMembersWhoBornAfter2000()
+    {
+        return RedirectToAction("GetMemberByBirthYear", new { year = 2000, compareType = "lessThan" });
+    }
+
+    [Route("NashTech/Rookies/GetMembersWhoBornBefore2000")]
+    public IActionResult GetMembersWhoBornBefore2000()
+    {
+        return RedirectToAction("GetMemberByBirthYear", new { year = 2000, compareType = "greaterThan" });
     }
 }

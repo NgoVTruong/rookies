@@ -4,7 +4,7 @@ using dotnet_core_assignment_day1.Models;
 namespace dotnet_core_assignment_day1.Controllers;
 public class RookiesController : Controller
 {
-    private List<PersonModel> _people = new List<PersonModel>
+    private static List<PersonModel> _people = new List<PersonModel>
     {
         new PersonModel {
             FirstName = "Truong",
@@ -107,5 +107,90 @@ public class RookiesController : Controller
     public IActionResult GetMembersWhoBornBefore2000()
     {
         return RedirectToAction("GetMemberByBirthYear", new { year = 2000, compareType = "greaterThan" });
+    }
+
+    [HttpGet]
+    public IActionResult Create()
+    {
+        return View();
+    }
+
+    [HttpPost]
+    public IActionResult Create(PersonCreateModel model)
+    {
+        // Console.WriteLine(JsonSerializer.Serialize(model));
+        if (ModelState.IsValid)
+        {
+            var person = new PersonModel
+            {
+                FirstName = model.FirstName,
+                LastName = model.LastName,
+                Gender = model.Gender,
+                DateOfBirth = model.DateOfBirth,
+                PhoneNumber = model.PhoneNumber,
+                BirthPlace = model.BirthPlace,
+            };
+            _people.Add(person);
+            return RedirectToAction("Index");
+        }
+
+        return View(model);
+    }
+
+    [HttpGet]
+    public IActionResult Edit(int index)
+    {
+        if (index >= 0 && index < _people.Count)
+        {
+            var person = _people[index];
+            var model = new PersonEditModel
+            {
+                FirstName = person.FirstName,
+                LastName = person.LastName,
+                DateOfBirth = person.DateOfBirth,
+                PhoneNumber = person.PhoneNumber,
+                BirthPlace = person.BirthPlace,
+
+            };
+            ViewData["Index"] = index;
+            return View(model);
+        }
+        return View();
+    }
+
+    [HttpPost]
+    public IActionResult Update(int index, PersonEditModel model)
+    {
+        if (ModelState.IsValid)
+        {
+            // if (index >= 0 && index < _people.Count)
+            {
+                var person = _people[index];
+                person.FirstName = model.FirstName;
+                person.LastName = model.LastName;
+                person.DateOfBirth = model.DateOfBirth;
+                person.PhoneNumber = model.PhoneNumber;
+                person.BirthPlace = model.BirthPlace;
+
+                _people[index] = person;
+
+                return RedirectToAction("Index");
+            }
+        }
+
+        return View(model);
+    }
+
+    [HttpPost]
+    public IActionResult Delete(int index)
+    {
+        if (index >= 0 && index < _people.Count)
+        {
+            _people.RemoveAt(index);
+
+            return RedirectToAction("Index");
+        }
+
+        return View();
     }
 }

@@ -1,0 +1,45 @@
+﻿@model PersonEditModel;
+
+@{
+    ViewData["Title"] = "Edit person";
+    var value = ViewData["Index"]?.ToString() ?? "";
+    var index = !string.IsNullOrEmpty(value) ? int.Parse(value) : 0;
+}
+
+<div class="">
+    <h1 class="display-4 text-center">Update person</h1>
+    <div class="row"></div>
+    <form asp-controller="Rookies" asp-action="Update" asp-route-index="@index" method="post" class="col-6 mx-auto">
+        <div class="form-group">
+            <label asp-for="FirstName"></label>
+            <input asp-for="FirstName" class="form-control" type="text" placeholder="Ngo">
+            <span asp-validate-for="FirstName" class="text-danger form-text"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="LastName"></label>
+            <input asp-for="LastName" class="form-control" type="text" placeholder="Truong">
+            <span asp-validate-for="LastName" class="text-danger form-text"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="DateOfBirth"></label>
+            <input asp-for="DateOfBirth" class="form-control" type="date">
+            <span asp-validate-for="DateOfBirth" class="text-danger form-text"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="PhoneNumber"></label>
+            <input asp-for="PhoneNumber" class="form-control" type="text">
+            <span asp-validate-for="PhoneNumber" class="text-danger form-text"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="BirthPlace"></label>
+            <input asp-for="BirthPlace" class="form-control" type="text">
+            <span asp-validate-for="BirthPlace" class="text-danger form-text"></span>
+        </div>
+        <div class="form-group mt-3">
+            <button type="submit" class="my-3 btn btn-primary">Submit</button>
+            <a role="button" class="my-3 btn btn-secondary" asp-controller="Rookies" asp-action="Index">cancel</a>
+        </div>
+    </form>
+</div>
+<p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>

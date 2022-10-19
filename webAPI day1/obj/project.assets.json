@@ -230,11 +230,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Truong\\_DEV\\rookies\\New folder\\New folder.csproj",
+      "projectUniqueName": "d:\\Truong\\_DEV\\rookies\\webAPI day1\\New folder.csproj",
       "projectName": "New folder",
-      "projectPath": "D:\\Truong\\_DEV\\rookies\\New folder\\New folder.csproj",
+      "projectPath": "d:\\Truong\\_DEV\\rookies\\webAPI day1\\New folder.csproj",
       "packagesPath": "C:\\Users\\saonm\\.nuget\\packages\\",
-      "outputPath": "D:\\Truong\\_DEV\\rookies\\New folder\\obj\\",
+      "outputPath": "d:\\Truong\\_DEV\\rookies\\webAPI day1\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

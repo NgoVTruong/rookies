@@ -1,0 +1,31 @@
+D:\Truong\_DEV\rookies\webAPI day2\bin\Debug\net6.0\appsettings.Development.json
+D:\Truong\_DEV\rookies\webAPI day2\bin\Debug\net6.0\appsettings.json
+D:\Truong\_DEV\rookies\webAPI day2\bin\Debug\net6.0\webAPI day2.exe
+D:\Truong\_DEV\rookies\webAPI day2\bin\Debug\net6.0\webAPI day2.deps.json
+D:\Truong\_DEV\rookies\webAPI day2\bin\Debug\net6.0\webAPI day2.runtimeconfig.json
+D:\Truong\_DEV\rookies\webAPI day2\bin\Debug\net6.0\webAPI day2.dll
+D:\Truong\_DEV\rookies\webAPI day2\bin\Debug\net6.0\webAPI day2.pdb
+D:\Truong\_DEV\rookies\webAPI day2\bin\Debug\net6.0\Microsoft.OpenApi.dll
+D:\Truong\_DEV\rookies\webAPI day2\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\Truong\_DEV\rookies\webAPI day2\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\Truong\_DEV\rookies\webAPI day2\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\Truong\_DEV\rookies\webAPI day2\obj\Debug\net6.0\webAPI day2.csproj.AssemblyReference.cache
+D:\Truong\_DEV\rookies\webAPI day2\obj\Debug\net6.0\webAPI day2.GeneratedMSBuildEditorConfig.editorconfig
+D:\Truong\_DEV\rookies\webAPI day2\obj\Debug\net6.0\webAPI day2.AssemblyInfoInputs.cache
+D:\Truong\_DEV\rookies\webAPI day2\obj\Debug\net6.0\webAPI day2.AssemblyInfo.cs
+D:\Truong\_DEV\rookies\webAPI day2\obj\Debug\net6.0\webAPI day2.csproj.CoreCompileInputs.cache
+D:\Truong\_DEV\rookies\webAPI day2\obj\Debug\net6.0\webAPI day2.MvcApplicationPartsAssemblyInfo.cs
+D:\Truong\_DEV\rookies\webAPI day2\obj\Debug\net6.0\webAPI day2.MvcApplicationPartsAssemblyInfo.cache
+D:\Truong\_DEV\rookies\webAPI day2\obj\Debug\net6.0\staticwebassets.build.json
+D:\Truong\_DEV\rookies\webAPI day2\obj\Debug\net6.0\staticwebassets.development.json
+D:\Truong\_DEV\rookies\webAPI day2\obj\Debug\net6.0\scopedcss\bundle\webAPI day2.styles.css
+D:\Truong\_DEV\rookies\webAPI day2\obj\Debug\net6.0\webAPI day2.csproj.CopyComplete
+D:\Truong\_DEV\rookies\webAPI day2\obj\Debug\net6.0\webAPI day2.dll
+D:\Truong\_DEV\rookies\webAPI day2\obj\Debug\net6.0\refint\webAPI day2.dll
+D:\Truong\_DEV\rookies\webAPI day2\obj\Debug\net6.0\webAPI day2.pdb
+D:\Truong\_DEV\rookies\webAPI day2\obj\Debug\net6.0\webAPI day2.genruntimeconfig.cache
+D:\Truong\_DEV\rookies\webAPI day2\obj\Debug\net6.0\ref\webAPI day2.dll
+D:\Truong\_DEV\rookies\webAPI day2\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+D:\Truong\_DEV\rookies\webAPI day2\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\Truong\_DEV\rookies\webAPI day2\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+D:\Truong\_DEV\rookies\webAPI day2\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll

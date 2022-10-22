@@ -37,7 +37,7 @@ namespace webAPI_day2.Services
             FirstName = "Tin",
             LastName = "Dinh",
             Gender = "Male",
-            DateOfBirth = new DateTime(200, 6, 2),
+            DateOfBirth = new DateTime(2004, 6, 2),
             PhoneNumber = "0943764955",
             BirthPlace = "Thai Binh",
             IsGraduated = "false",
@@ -79,5 +79,6 @@ namespace webAPI_day2.Services
 
             return null;
         }
+
     }
 }

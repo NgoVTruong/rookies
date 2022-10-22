@@ -1,4 +1,4 @@
-namespace New_folder;
+namespace webAPI_day1;
 
 public class WeatherForecast
 {

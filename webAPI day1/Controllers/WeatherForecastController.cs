@@ -1,9 +1,9 @@
 using Microsoft.AspNetCore.Mvc;
 
-namespace New_folder.Controllers;
+namespace webAPI_day1.Controllers;
 
 [ApiController]
-[Route("[controller]")]
+[Route("api/[controller]")]
 public class WeatherForecastController : ControllerBase
 {
     private static readonly string[] Summaries = new[]

@@ -5,7 +5,7 @@ using webAPI_day2.Services;
 namespace webAPI_day2.Controllers;
 
 [ApiController]
-[Route("[controller]")]
+[Route("api/[controller]")]
 public class PersonController : ControllerBase
 {
     private readonly ILogger<PersonController> _logger;
@@ -65,6 +65,7 @@ public class PersonController : ControllerBase
     public IActionResult Create(PersonDetailModel model)
     {
         if (!ModelState.IsValid) return BadRequest();
+        
         try
         {
             var person = new PersonModel

@@ -65,7 +65,7 @@ public class PersonController : ControllerBase
     public IActionResult Create(PersonDetailModel model)
     {
         if (!ModelState.IsValid) return BadRequest();
-        
+
         try
         {
             var person = new PersonModel
@@ -131,5 +131,81 @@ public class PersonController : ControllerBase
         {
             return StatusCode(StatusCodes.Status500InternalServerError, ex);
         }
+    }
+
+    [HttpGet("Person Male")]
+    public IEnumerable<PersonDetailModel> FilterGenderMale()
+    {
+        var data = _personService.GetAll();
+        return from item in data
+               where item.Gender.ToLower() == "male"
+               select new PersonDetailModel
+               {
+                   Id = item.Id,
+                   FirstName = item.FirstName,
+                   LastName = item.LastName,
+                   Gender = item.Gender,
+                   DateOfBirth = item.DateOfBirth,
+                   PhoneNumber = item.PhoneNumber,
+                   BirthPlace = item.BirthPlace,
+                   IsGraduated = item.IsGraduated,
+               };
+    }
+
+    [HttpGet("Person Female")]
+    public IEnumerable<PersonDetailModel> FilterGenderFemale()
+    {
+        var data = _personService.GetAll();
+        return from item in data
+               where item.Gender.ToLower() == "female"
+               select new PersonDetailModel
+               {
+                   Id = item.Id,
+                   FirstName = item.FirstName,
+                   LastName = item.LastName,
+                   Gender = item.Gender,
+                   DateOfBirth = item.DateOfBirth,
+                   PhoneNumber = item.PhoneNumber,
+                   BirthPlace = item.BirthPlace,
+                   IsGraduated = item.IsGraduated,
+               };
+    }
+
+    [HttpGet("Person Other")]
+    public IEnumerable<PersonDetailModel> FilterGenderOther()
+    {
+        var data = _personService.GetAll();
+        return from item in data
+               where item.Gender.ToLower() == "other"
+               select new PersonDetailModel
+               {
+                   Id = item.Id,
+                   FirstName = item.FirstName,
+                   LastName = item.LastName,
+                   Gender = item.Gender,
+                   DateOfBirth = item.DateOfBirth,
+                   PhoneNumber = item.PhoneNumber,
+                   BirthPlace = item.BirthPlace,
+                   IsGraduated = item.IsGraduated,
+               };
+    }
+
+    [HttpGet("{birth place:Guid}")]
+    public IEnumerable<PersonDetailModel> FilterBirthPlace(string birthPlace)
+    {
+        var data = _personService.GetAll();
+        return from item in data
+               where item.BirthPlace.Trim().ToLower() == birthPlace.Trim().ToLower()
+               select new PersonDetailModel
+               {
+                   Id = item.Id,
+                   FirstName = item.FirstName,
+                   LastName = item.LastName,
+                   Gender = item.Gender,
+                   DateOfBirth = item.DateOfBirth,
+                   PhoneNumber = item.PhoneNumber,
+                   BirthPlace = item.BirthPlace,
+                   IsGraduated = item.IsGraduated,
+               };
     }
 }

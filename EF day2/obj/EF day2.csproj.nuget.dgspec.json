@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Truong\\_DEV\\rookies\\EF day2\\EF day2.csproj": {}
+    "d:\\Truong\\_DEV\\rookies\\EF day2\\EF day2.csproj": {}
   },
   "projects": {
-    "D:\\Truong\\_DEV\\rookies\\EF day2\\EF day2.csproj": {
+    "d:\\Truong\\_DEV\\rookies\\EF day2\\EF day2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Truong\\_DEV\\rookies\\EF day2\\EF day2.csproj",
+        "projectUniqueName": "d:\\Truong\\_DEV\\rookies\\EF day2\\EF day2.csproj",
         "projectName": "EF day2",
-        "projectPath": "D:\\Truong\\_DEV\\rookies\\EF day2\\EF day2.csproj",
+        "projectPath": "d:\\Truong\\_DEV\\rookies\\EF day2\\EF day2.csproj",
         "packagesPath": "C:\\Users\\saonm\\.nuget\\packages\\",
-        "outputPath": "D:\\Truong\\_DEV\\rookies\\EF day2\\obj\\",
+        "outputPath": "d:\\Truong\\_DEV\\rookies\\EF day2\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

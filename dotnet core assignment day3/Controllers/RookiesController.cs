@@ -19,6 +19,7 @@ public class RookiesController : Controller
     public IActionResult Index()
     {
         var People = _personService.GetAll();
+
         return View(People);
     }
 
@@ -38,8 +39,10 @@ public class RookiesController : Controller
                 IsGraduated = person.IsGraduated,
             };
             ViewData["Index"] = index;
+
             return View(model);
         }
+
         return View();
     }
 
@@ -86,8 +89,10 @@ public class RookiesController : Controller
                 BirthPlace = person.BirthPlace,
             };
             ViewData["Index"] = index;
+
             return View(model);
         }
+
         return View();
     }
 
@@ -121,7 +126,6 @@ public class RookiesController : Controller
         if (personDeleted == null) return NotFound();
 
         return RedirectToAction("Index");
-
     }
 
     [HttpPost]
@@ -137,7 +141,7 @@ public class RookiesController : Controller
 
     public IActionResult DeleteResult(int index)
     {
-         ViewBag.DeletePerSonName = HttpContext.Session.GetString("DeletePersonName");
+        ViewBag.DeletePerSonName = HttpContext.Session.GetString("DeletePersonName");
         return View();
     }
 }

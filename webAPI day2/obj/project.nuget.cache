@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "KfOiIQFfjF1zZG+ScQZsYAdCeqipivK4Mtx3bBYGsOa5vkZhNtj0QTS4wjPPSfx/qblREW5fNYyW7lh9NSxLxA==",
+  "dgSpecHash": "yoxv0lH8lab6J8jnZTA5FYEZGhQ1Vay3Jj1YHtT8EoEE3ngdn7m8jICBMvwp2Vx5RsakWVyPsj/Oby8HyFkU3Q==",
   "success": true,
-  "projectFilePath": "d:\\Truong\\_DEV\\rookies\\webAPI day2\\webAPI day2.csproj",
+  "projectFilePath": "D:\\Truong\\_DEV\\rookies\\webAPI day2\\webAPI day2.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\saonm\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.10\\microsoft.entityframeworkcore.6.0.10.nupkg.sha512",
     "C:\\Users\\saonm\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.10\\microsoft.entityframeworkcore.abstractions.6.0.10.nupkg.sha512",

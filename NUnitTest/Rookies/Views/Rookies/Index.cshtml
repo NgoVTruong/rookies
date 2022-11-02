@@ -1,0 +1,75 @@
+﻿@model List<unit_test.Models.PersonModel>;
+
+@{
+    ViewData["Title"] = "Rookies Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">All members</h1>
+    <div class="my-6 w-full h-full">
+        <a role="button" class="btn btn-primary px-4 py-2 rounded-md" asp-controller="Rookies"
+            asp-action="Create">Create new
+            person</a>
+    </div>
+    <table class="table table-bordered table-responsive table-hover">
+        <tr>
+            <th>#</th>
+            <th>FullName</th>
+            <th>Gender</th>
+            <th>DateOfBirth</th>
+            <th>PhoneNumber</th>
+            <th>BirthPlace</th>
+            <th>IsGraduated</th>
+            <th>Actions</th>
+        </tr>
+        @{
+
+            int i = 0;
+            foreach (var d in Model)
+            {
+                <tr>
+                    <td>@i</td>
+                    <td>
+                        <a role="button" asp-controller="Rookies" asp-action="Detail" asp-route-index="@i"
+                    class="no-underline">@d.FullName</a>
+                    </td>
+                    <td>@d.Gender</td>
+                    <td>@d.DateOfBirth</td>
+                    <td>@d.PhoneNumber</td>
+                    <td>@d.BirthPlace</td>
+                    <td>@d.IsGraduated</td>
+                    <td>
+                        <a role="button" class="btn btn-primary" asp-controller="Rookies" asp-action="Edit"
+                    asp-route-index="@i">Edit</a>
+                        <a role="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal_@i">Delete</a>
+                    </td>
+                </tr>
+                <div class="modal fade" id="exampleModal_@i" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <form asp-controller="Rookies" asp-action="Delete" asp-route-index="@i" method="post">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Delete confirmation</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    Are you sure ???
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button"
+                                    class="btn btn-primary bg-gray-500 my-3 border-gray-600 hover:bg-gray-600 hover:border-gray-600"
+                                    data-bs-dismiss="modal">Close</button>
+                                    <button type="submit" class="btn btn-primary bg-blue-500 my-3">Confirm</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                i += 1;
+            }
+        }
+    </table>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>

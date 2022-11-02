@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Q74eE+aGkh7Uf+qOCrDwIV1J8M7dydm96oA764hpLRxOQCIi6nhZj1g3tQEDNH/fesmdNT8+fdMqFZu7WzkIvw==",
+  "dgSpecHash": "tuX/cQHeFJGzXmjClpBq9k1R0mlWKy6zmWihlKJ+TXWrISM7O2YOJrOiGB42uG6Orki8Seah2MZtAHbhyvea1g==",
   "success": true,
-  "projectFilePath": "D:\\Truong\\_DEV\\rookies\\EF day2\\EF day2.csproj",
+  "projectFilePath": "d:\\Truong\\_DEV\\rookies\\EF day2\\EF day2.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\saonm\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",

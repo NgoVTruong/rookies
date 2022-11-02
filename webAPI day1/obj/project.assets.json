@@ -230,11 +230,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Truong\\_DEV\\rookies\\webAPI day1\\webAPI day1.csproj",
+      "projectUniqueName": "d:\\Truong\\_DEV\\rookies\\webAPI day1\\webAPI day1.csproj",
       "projectName": "webAPI day1",
-      "projectPath": "D:\\Truong\\_DEV\\rookies\\webAPI day1\\webAPI day1.csproj",
+      "projectPath": "d:\\Truong\\_DEV\\rookies\\webAPI day1\\webAPI day1.csproj",
       "packagesPath": "C:\\Users\\saonm\\.nuget\\packages\\",
-      "outputPath": "D:\\Truong\\_DEV\\rookies\\webAPI day1\\obj\\",
+      "outputPath": "d:\\Truong\\_DEV\\rookies\\webAPI day1\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -290,7 +290,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
       }
     }
   }

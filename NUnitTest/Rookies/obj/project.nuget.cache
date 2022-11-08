@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "J5ITgEnFeruupjaNQ9bOwwSMZryzrUyt8Sth6mohmJsRR5ewwXwhIeySIBho5hj9BkVnSv5CaGxCheY/+F/zpg==",
+  "dgSpecHash": "dU2okqUelW+cRPxTQ+ye/rFo2rllhOEj7x6Xm7Ap5TygdWFZ62psfd4fy7nS5dYQjiCZf0kg2MO54gyouItqOg==",
   "success": true,
-  "projectFilePath": "D:\\Truong\\_DEV\\rookies\\NUnitTest\\rookies\\unit_test.csproj",
+  "projectFilePath": "D:\\Truong\\_DEV\\rookies\\NUnitTest\\Rookies\\unit_test.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\saonm\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",

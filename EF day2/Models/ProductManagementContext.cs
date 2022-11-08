@@ -15,12 +15,14 @@ namespace EF_day2.Models
             modelBuilder.Entity<Category>()
                             .ToTable("Category")
                             .HasKey(cat => cat.CategoryId);
+
             modelBuilder.Entity<Category>()
                             .Property(cat => cat.CategoryId)
                             .HasColumnName("CategoryId")
                             .HasColumnType("int")
                             .UseIdentityColumn(1)
                             .IsRequired();
+
             modelBuilder.Entity<Category>()
                             .Property(cat => cat.CategoryName)
                             .HasColumnName("CategoryName")
@@ -31,22 +33,26 @@ namespace EF_day2.Models
             modelBuilder.Entity<Product>()
                             .ToTable("Product")
                             .HasKey(p => p.Id);
+
             // modelBuilder.Entity<Product>()
             //                 .HasOne<Category>(p => p.Category)
             //                 .WithMany(p => p.Product)
             //                 .HasForeignKey(p => p.CategoryId);
+
             modelBuilder.Entity<Product>()
                             .Property(p => p.Id)
                             .HasColumnName("ProductId")
                             .HasColumnType("int")
                             .UseIdentityColumn(1)
                             .IsRequired();
+
             modelBuilder.Entity<Product>()
                             .Property(p => p.ProductName)
                             .HasColumnName("ProductName")
                             .HasColumnType("nvarchar")
                             .HasMaxLength(100)
                             .IsRequired();
+
             modelBuilder.Entity<Product>()
                             .Property(p => p.Manufacture)
                             .HasColumnName("Manufacture")
@@ -66,6 +72,7 @@ namespace EF_day2.Models
                     CategoryName = "Computer"
                 }
             );
+
             modelBuilder.Entity<Product>().HasData(
                 new Product
                 {

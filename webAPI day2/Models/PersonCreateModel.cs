@@ -26,6 +26,6 @@ namespace webAPI_day2.Models
         public string? BirthPlace { get; set; }
 
         [DisplayName("IsGraduated")]
-        public bool? IsGraduated { get; set; }
+        public string? IsGraduated { get; set; }
     }
 }

@@ -13,12 +13,12 @@ namespace EF_day2.Repositories
         }
         public void Commit()
         {
-            _transaction.Rollback();
+            _transaction.Commit();
         }
 
         public void Dispose()
         {
-            _transaction.Rollback();
+            //_transaction.Rollback();
         }
 
         public void Rollback()

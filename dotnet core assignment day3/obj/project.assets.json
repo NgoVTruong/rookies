@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Truong\\_DEV\\rookies\\dotnet core assignment day3\\dotnet core assignment day3.csproj",
+      "projectUniqueName": "d:\\Truong\\_DEV\\rookies\\dotnet core assignment day3\\dotnet core assignment day3.csproj",
       "projectName": "dotnet core assignment day3",
-      "projectPath": "D:\\Truong\\_DEV\\rookies\\dotnet core assignment day3\\dotnet core assignment day3.csproj",
+      "projectPath": "d:\\Truong\\_DEV\\rookies\\dotnet core assignment day3\\dotnet core assignment day3.csproj",
       "packagesPath": "C:\\Users\\saonm\\.nuget\\packages\\",
-      "outputPath": "D:\\Truong\\_DEV\\rookies\\dotnet core assignment day3\\obj\\",
+      "outputPath": "d:\\Truong\\_DEV\\rookies\\dotnet core assignment day3\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -68,7 +68,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
       }
     }
   }

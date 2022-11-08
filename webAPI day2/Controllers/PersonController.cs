@@ -6,6 +6,7 @@ namespace webAPI_day2.Controllers;
 
 [ApiController]
 [Route("api/[controller]")]
+//[EnableCors(origins: "*", headers: "*", methods: "*", exposedHeaders: "X-Custom-Header")]
 public class PersonController : ControllerBase
 {
     private readonly ILogger<PersonController> _logger;
@@ -133,79 +134,88 @@ public class PersonController : ControllerBase
         }
     }
 
-    [HttpGet("Person Male")]
-    public IEnumerable<PersonDetailModel> FilterGenderMale()
+    [HttpGet("name")]
+    public IActionResult FilterName(string name)
     {
-        var data = _personService.GetAll();
-        return from item in data
-               where item.Gender.ToLower() == "male"
-               select new PersonDetailModel
-               {
-                   Id = item.Id,
-                   FirstName = item.FirstName,
-                   LastName = item.LastName,
-                   Gender = item.Gender,
-                   DateOfBirth = item.DateOfBirth,
-                   PhoneNumber = item.PhoneNumber,
-                   BirthPlace = item.BirthPlace,
-                   IsGraduated = item.IsGraduated,
-               };
+        try
+        {
+            var data = _personService.GetAll();
+            var result = from item in data
+                         where item.FullName.Trim().ToLower() == name.Trim().ToLower()
+
+                         select new PersonDetailModel
+                         {
+                             Id = item.Id,
+                             FirstName = item.FirstName,
+                             LastName = item.LastName,
+                             Gender = item.Gender,
+                             DateOfBirth = item.DateOfBirth,
+                             PhoneNumber = item.PhoneNumber,
+                             BirthPlace = item.BirthPlace,
+                             IsGraduated = item.IsGraduated,
+                         };
+            if (result == null || !result.Any()) return StatusCode(StatusCodes.Status404NotFound);
+            return new JsonResult(result);
+
+        }
+        catch (Exception ex)
+        {
+            return StatusCode(StatusCodes.Status500InternalServerError, ex);
+        }
     }
 
-    [HttpGet("Person Female")]
-    public IEnumerable<PersonDetailModel> FilterGenderFemale()
+    [HttpGet("gender")]
+    public IActionResult FilterGender(string gender)
     {
-        var data = _personService.GetAll();
-        return from item in data
-               where item.Gender.ToLower() == "female"
-               select new PersonDetailModel
-               {
-                   Id = item.Id,
-                   FirstName = item.FirstName,
-                   LastName = item.LastName,
-                   Gender = item.Gender,
-                   DateOfBirth = item.DateOfBirth,
-                   PhoneNumber = item.PhoneNumber,
-                   BirthPlace = item.BirthPlace,
-                   IsGraduated = item.IsGraduated,
-               };
+        try
+        {
+            var data = _personService.GetAll();
+            var result = from item in data
+                         where item.Gender.Trim().ToLower() == gender.Trim().ToLower()
+                         select new PersonDetailModel
+                         {
+                             Id = item.Id,
+                             FirstName = item.FirstName,
+                             LastName = item.LastName,
+                             Gender = item.Gender,
+                             DateOfBirth = item.DateOfBirth,
+                             PhoneNumber = item.PhoneNumber,
+                             BirthPlace = item.BirthPlace,
+                             IsGraduated = item.IsGraduated,
+                         };
+            if (result == null || !result.Any()) return StatusCode(StatusCodes.Status404NotFound);
+            return new JsonResult(result);
+        }
+        catch (Exception ex)
+        {
+            return StatusCode(StatusCodes.Status500InternalServerError, ex);
+        }
     }
 
-    [HttpGet("Person Other")]
-    public IEnumerable<PersonDetailModel> FilterGenderOther()
+    [HttpGet("birth-place")]
+    public IActionResult FilterBirthPlace(string birthPlace)
     {
-        var data = _personService.GetAll();
-        return from item in data
-               where item.Gender.ToLower() == "other"
-               select new PersonDetailModel
-               {
-                   Id = item.Id,
-                   FirstName = item.FirstName,
-                   LastName = item.LastName,
-                   Gender = item.Gender,
-                   DateOfBirth = item.DateOfBirth,
-                   PhoneNumber = item.PhoneNumber,
-                   BirthPlace = item.BirthPlace,
-                   IsGraduated = item.IsGraduated,
-               };
-    }
-
-    [HttpGet("{birth place:Guid}")]
-    public IEnumerable<PersonDetailModel> FilterBirthPlace(string birthPlace)
-    {
-        var data = _personService.GetAll();
-        return from item in data
-               where item.BirthPlace.Trim().ToLower() == birthPlace.Trim().ToLower()
-               select new PersonDetailModel
-               {
-                   Id = item.Id,
-                   FirstName = item.FirstName,
-                   LastName = item.LastName,
-                   Gender = item.Gender,
-                   DateOfBirth = item.DateOfBirth,
-                   PhoneNumber = item.PhoneNumber,
-                   BirthPlace = item.BirthPlace,
-                   IsGraduated = item.IsGraduated,
-               };
+        try
+        {
+            var data = _personService.GetAll();
+            var result = from item in data
+                         where item.BirthPlace.Trim().ToLower() == birthPlace.Trim().ToLower()
+                         select new PersonDetailModel
+                         {
+                             Id = item.Id,
+                             FirstName = item.FirstName,
+                             LastName = item.LastName,
+                             Gender = item.Gender,
+                             DateOfBirth = item.DateOfBirth,
+                             PhoneNumber = item.PhoneNumber,
+                             BirthPlace = item.BirthPlace,
+                         };
+            if (result == null || !result.Any()) return StatusCode(StatusCodes.Status404NotFound);
+            return new JsonResult(result);
+        }
+        catch (Exception ex)
+        {
+            return StatusCode(StatusCodes.Status500InternalServerError, ex);
+        }
     }
 }

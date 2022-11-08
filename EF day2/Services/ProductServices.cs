@@ -8,11 +8,13 @@ namespace EF_day2.Services
     {
         private readonly IProductRepository _productRepo;
         private readonly ICategoryRepository _categoryRepo;
+        private readonly ProductManagementContext _context;
 
-        public ProductServices(IProductRepository productRepository, ICategoryRepository categoryRepository)
+        public ProductServices(IProductRepository productRepository, ICategoryRepository categoryRepository, ProductManagementContext context)
         {
             _productRepo = productRepository;
             _categoryRepo = categoryRepository;
+            _context = context;
         }
 
 
@@ -47,11 +49,49 @@ namespace EF_day2.Services
 
                     return null;
                 }
-                catch (Exception )
+                catch (Exception ex)
                 {
                     transaction.Rollback();
                     return null;
                 }
+        }
+
+        public AddProductResponse? Add2(AddProduct addModel)
+        {
+            var transaction = _context.Database.BeginTransaction();
+
+            try
+            {
+                var category = _categoryRepo.Get(c => c.CategoryId == addModel.CategoryId);
+                if (category != null)
+                {
+                    var addProduct = new Product
+                    {
+                        ProductName = addModel.ProductName,
+                        CategoryId = category.CategoryId,
+                    };
+
+                    var newDummyProduct = _productRepo.Create(addProduct);
+
+                    _productRepo.SaveChanges();
+
+                    transaction.Commit();
+
+                    return new AddProductResponse
+                    {
+                        ProductId = newDummyProduct.Id,
+                        ProductName = newDummyProduct.ProductName,
+                        CategoryId = newDummyProduct.CategoryId
+                    };
+                }
+
+                return null;
+            }
+            catch (Exception ex)
+            {
+                transaction.Rollback();
+                return null;
+            }
         }
     }
 }

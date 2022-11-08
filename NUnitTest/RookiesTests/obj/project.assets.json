@@ -6372,8 +6372,8 @@
     },
     "unit_test/1.0.0": {
       "type": "project",
-      "path": "../rookies/unit_test.csproj",
-      "msbuildProject": "../rookies/unit_test.csproj"
+      "path": "../Rookies/unit_test.csproj",
+      "msbuildProject": "../Rookies/unit_test.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -6418,8 +6418,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\Truong\\_DEV\\rookies\\NUnitTest\\rookies\\unit_test.csproj": {
-              "projectPath": "D:\\Truong\\_DEV\\rookies\\NUnitTest\\rookies\\unit_test.csproj"
+            "D:\\Truong\\_DEV\\rookies\\NUnitTest\\Rookies\\unit_test.csproj": {
+              "projectPath": "D:\\Truong\\_DEV\\rookies\\NUnitTest\\Rookies\\unit_test.csproj"
             }
           }
         }

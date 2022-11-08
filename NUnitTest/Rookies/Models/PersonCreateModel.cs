@@ -6,6 +6,7 @@ namespace unit_test.Models
     public class PersonCreateModel
     {
         [DisplayName("First Name")]
+        [MinLength(3)]
         [Required(ErrorMessage = "First Name is required!")]
         public string? FirstName { get; set; }
 

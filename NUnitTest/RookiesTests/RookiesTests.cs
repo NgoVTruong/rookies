@@ -38,8 +38,20 @@ namespace RookiesTest
 			Assert.AreEqual((result as RedirectToActionResult).ActionName, "Index");
 		}
 
-		[Test]
-		public void Create_ReturnView_InValid()
+        //[Test]
+        //public void Create_RedirectToAction_InValid()
+        //{
+        //    var mockModel = new PersonCreateModel
+        //    {
+		//		FirstName = ""
+        //    };
+        //    var result = _rookiesController.Create(mockModel);
+		//
+        //    Assert.IsInstanceOf<ViewResult>(result);
+        //}
+
+        [Test]
+		public void Create_ReturnView()
 		{
 			var result = _rookiesController.Create();
 
@@ -48,7 +60,8 @@ namespace RookiesTest
 
 		[Test]
 		public void Detail_ReturnView_Valid()
-		{
+		{	
+			var index = 0;
 			var expectPersonModel = new PersonModel
 			{
 				FirstName = "Truong",
@@ -62,8 +75,6 @@ namespace RookiesTest
 				FirstName = "Truong",
 				LastName = "Ngo"
 			};
-
-			var index = 0;
 
 			var result = _rookiesController.Detail(index) as ViewResult;
 
@@ -154,7 +165,7 @@ namespace RookiesTest
 		public void Delete_Person_NotFound()
 		{
 			var index = -1;
-			var result = _rookiesController.Delete(index);
+            var result = _rookiesController.Delete(index);
 
 			Assert.IsInstanceOf<NotFoundResult>(result);
 		}

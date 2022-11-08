@@ -9,7 +9,7 @@ namespace EF_day2.Models
 
         public string ProductName { get; set; }
 
-        public string Manufacture { get; set; }
+        public string? Manufacture { get; set; }
 
         public int CategoryId { get; set; }
 

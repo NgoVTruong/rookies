@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "bNAvRxaeYSsdS+Nnq+e9Pvss+5wzH8MifcRtGhFeilELPuGQCo+cJ+hRSfZ7THYaev7wGEO5LsPd8kkVY0dLWQ==",
+  "dgSpecHash": "SoKdgfMA9X0+sMsJg8I3rpD0iKDIf4A1/WrdAuuB8DxWBcBi1jIWxJJ5MRIj+ATzLmLEVB1Iz1YZCyHmBZOxhQ==",
   "success": true,
-  "projectFilePath": "d:\\Truong\\_DEV\\rookies\\webAPI day1\\webAPI day1.csproj",
+  "projectFilePath": "D:\\Truong\\_DEV\\rookies\\webAPI day1\\webAPI day1.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\saonm\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Users\\saonm\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",

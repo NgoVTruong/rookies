@@ -1,4 +1,5 @@
 using EF_day2.DTOs.Product;
+using EF_day2.Models;
 using EF_day2.Services;
 using Microsoft.AspNetCore.Mvc;
 
@@ -18,7 +19,7 @@ namespace EF_day2.Controllers
         [HttpPost]
         public AddProductResponse? Add([FromBody] AddProduct addModel)
         {
-            return _productServices.Add(addModel);
+            return _productServices.Add2(addModel);
         }
     }
 }
